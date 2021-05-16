@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--Info de la página-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>CatPhotoApp</h2>
+    
+    <!-- 
+    HTML 5 introduce etiquetas más descriptivas. Estas incluyen
+    main, header, footer, nav, video, article,
+    section,...
+
+    Estas etiquetas dan una estructura descriptiva a tu HTML, hacen 
+    que tu HTML sea más fácil de leer, ayudan con la Optimización de 
+    Motores de Búsqueda (SEO) y mejoran la accesibilidad.
+    La etiqueta HTML5 main ayuda a los motores de búsqueda y otros 
+    desarrolladores a encontrar el contenido principal de tu página.
+    -->
+    <main>
+        <!--
+        Etiqueta a anchor para enviar a una página web externa
+        target = _blank abre el enlace en una nueva pestaña/ventana
+
+        Enlace a partes internas del doc con # con el id del elemento destino
+        "#"-> enlace muerto
+
+        Se pueden convertir elementos en enlaces, como imágenes por ejemplo.
+
+        -->
+        <p>
+            View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+        </p>
+        <a href="#footer">Enlace al pie de página.</a>
+
+        <!--Etiqueta para mostrar imagen con enlace muerto-->
+        <a href="#">
+            <img src="https://www.bit.ly/fcc-relaxing-cat" alt="Nice Cat.">
+        </a>
+
+        <p>
+            Kitty ipsum dolor sit amet, shed everywhere 
+            shed everywhere stretching attack your ankles 
+            chase the red dot, hairball run catnip eat the 
+            grass sniff
+        </p>
+
+        <p>
+            Purr jump eat the grass rip the couch scratched 
+            sunbathe, shed everywhere rip the couch sleep in 
+            the sink fluffy fur catnip scratched.
+        </p>
+        
+        <p>
+            Meowwww loved it, hated it, loved it, hated it yet 
+            spill litter box, scratch at owner, destroy all furniture, 
+            especially couch or lay on arms while you're using the keyboard. 
+            Missing until dinner time toy mouse squeak roll over. With tail
+            in the air lounge in doorway. Man running from cops stops to pet 
+            cats, goes to jail.
+        </p>
+        
+        <p>Intently stare at the same spot poop in the plant pot but kitten 
+            is playing with dead mouse. Get video posted to internet for chasing 
+            red dot leave fur on owners clothes meow to be let out and mesmerizing
+            birds leave fur on owners clothes or favor packaging over toy so purr 
+            for no reason. Meow to be let out play time intently sniff hand run 
+            outside as soon as door open yet destroy couch.
+        </p>
+
+        <p>Things Cats love:</p>
+        <!--Lista sin orden-->
+        <ul>
+            <li>Milk</li>
+            <li>Cheese</li>
+            <li>Water</li>
+        </ul>
+
+        <p>Things Cats hate:</p>
+        <!--Lista ordenada-->
+        <ol>
+            <li>Dogs</li>
+            <li>People</li>
+            <li>Other cats</li>
+        </ol>
+
+        <!--action especifica a donde se va a enviar la info del formulario-->
+        <form action="/url-destino">
+
+            <!--Entrada de texto por parte del usuario-->
+            <input type="text" required placeholder="This is placeholder text">
+            
+            <!--
+                radio buttons
+                Son de tipo de entrada input
+                Anidables dentro de un elemento label, de esta manera
+                se asocia la entrada del button con el label que lo rodea.
+
+                To dos los elementos radio relacionados deben tener el mismo name,
+                de esta forma sólo se selecciona uno a la vez.
+
+                Conviene establecer un atributo for en el elemento label, con el valor
+                que coincida con el id del elemento input, para poder establecer una
+                relación de vínculo:
+
+                <input id="indoor" type="radio" name="indoor-outdoor">
+                <label for="indoor">Indoor</label>
+
+                es lo mismo qué:
+
+                <label for="indoor"> 
+                    <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+                </label>
+
+                value por defecto-> on (no resulta muy útil)
+                Puede especificarse explícitamente con el atributo value
+
+                checked -> valor seleccionado por defecto
+            -->
+            <label for="indoor">
+                <input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor
+            </label>
+            
+            <label for="outdoor">
+                <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+            </label>
+            
+            <!--
+                checkbox
+                Funciona igual al radio button.
+                La única diferencia es la elección de múltiples opciones.
+
+                value por defecto-> on (no resulta muy útil)
+                Puede especificarse explícitamente con el atributo value
+            -->
+
+            <label for="Personality_1">
+                <input id="Personality_1" 
+                type="checkbox" 
+                name="personality"
+                value="personality 1"
+                checked> Personality 1
+            </label>
+
+            <label>
+                <input id="Personality_2" type="checkbox" name="personality" value="personality 2"> Personality_2
+            </label>
+
+            <label>
+                <input id="Personality_3" type="checkbox" name="personality"> Personality_3
+            </label>
+
+            <!--Botón para enviar la info del formulario-->
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
+
+    <footer id="footer">
+        Copyright Cat Photo App
+    </footer>
+</body>
+</html>
+
+
+
