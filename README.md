@@ -16,3 +16,15 @@
 + Marcar botones con un valor por defecto.
 + Agrupar dentro del elemento div.
 + Cuerpo y encabezado de un documento HTML.
+
+## CSS Básico
+
++ Uso de selectores, clases y id para especificar reglas.
++ Cambio de color, tamaño de fuente, tipo de fuente, color de fondo.
++ Cambio tamaño de imágenes.
++ Padding -> Relleno entre el elemento y su borde
++ Border -> tipo de borde, color y grosor.
++ Margin -> Distancia entre su borde y elementos vecinos.
++ Selector de atributos [type='checkbox'] para dar estilo a varios elementos comunes.
++ Herencia de reglas CSS.
++ Niveles de prioridadad !important.

@@ -10,7 +10,7 @@ clases*/
     color:orange;
 }
 .pink-text {
-    color: pink !important;/*Máximo niveld de prioridad*/
+    color: pink !important;/*Máximo nivel de prioridad*/
 }
 .blue-text {/*Tiene prioridad */
     color: blue;
