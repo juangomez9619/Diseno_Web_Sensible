@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    color: green;
+    font-family: monospace;
+}
+
+/* ID tiene prioridad por encima de las
+clases*/
+#orange-text{
+    color:orange;
+}
+.pink-text {
+    color: pink !important;/*Máximo niveld de prioridad*/
+}
+.blue-text {/*Tiene prioridad */
+    color: blue;
+}
+
+
+
