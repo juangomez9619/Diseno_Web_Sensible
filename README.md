@@ -28,3 +28,8 @@
 + Selector de atributos [type='checkbox'] para dar estilo a varios elementos comunes.
 + Herencia de reglas CSS.
 + Niveles de prioridadad !important.
++ Colores con código RGB y hexadecimal.
++ Variables CSS.
++ Variables personalizadas con valor de respaldo (fallback).
++ Herencia de variables y sobreescritura.
++ Media query para cambiar el valor de una variable.
