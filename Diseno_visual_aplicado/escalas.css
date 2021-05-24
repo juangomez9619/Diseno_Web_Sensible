@@ -1,0 +1,49 @@
+.ball {
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: fixed;
+    background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+    );
+    border-radius: 50%;
+}
+#ball1 {
+    left: 20%;
+}
+#ball2 {
+    left: 65%;
+    transform: scale(1.5);/*Transformación de tamaño (escala)*/
+}
+#cuadro{
+    position: relative;
+    top: 60px;
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+    53deg,
+    #ccfffc,
+    #ffcccf
+    );
+}
+#cuadro:hover{/*Cambio de escala al pasar por encima del elemento*/
+    transform: scale(1.1);
+}
+#top{
+    width: 70%;
+    height: 100px;
+    margin:  100px auto;
+    background-color: red;
+    transform: skewY(-2deg);/*Inclinación a lo largo del eje y*/
+}
+
+#bottom{
+    width: 70%;
+    height: 100px;
+    margin:  -50px auto;
+    background-color: blue;
+    transform: skewX(24deg);/*Inclinación a lo largo del eje x*/
+}
