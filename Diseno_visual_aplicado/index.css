@@ -1,0 +1,85 @@
+#thumbnail{
+    box-shadow: 0 
+    10px 
+    20px
+    rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0,0,0,0.23); /* color de la sombra*/
+}
+#navbar {
+    width: 100%;
+    background-color: #767676;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    position: relative;
+    top:25px; 
+    /*Desplazamiento en dirección opuesta
+    respecto a su posición normal
+    Existe la position absolute para sacar
+    al elemento del flujo normal del documento
+    
+    fixed no mueve el elemento inclusive si se desplaza
+    por la página*/
+
+}
+p {
+    text-align: justify;
+    line-height: 25px;
+}
+.links {
+    text-align: left;
+    color: black;
+    opacity: 0.7;
+}
+.fullCard {
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: auto;/*Centrado horizontal automático*/
+    padding: 4px;
+}
+.cardContent {
+    padding: 10px;
+}
+.cardText {
+    margin-bottom: 30px;
+}
+
+a:hover{
+    color: gray;
+}
+
+#left{
+    float: left; /*Elemento flotante a la izq*/
+    width: 40%;
+    position: relative;
+    bottom: 10px;
+}
+
+#right{
+    float: right;/*Elemento flotante a la der*/
+    width: 50%;
+    position: relative;
+    bottom: 10px;
+    text-align: right;
+}
