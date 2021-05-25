@@ -1,0 +1,96 @@
+.moon{
+    /*Centrado horizontal y vertical
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px blue;
+    margin: auto;
+}
+
+.heart {
+    margin: 100px auto;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+}
+.heart::after {/*Elemento despúes de */
+    background-color: pink;
+    content: "";/*Cadena vacia para que funcione correctamente*/
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+}
+.heart::before {/*Elemento antes de */
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+}
+
+/*Animaciones*/
+#rect{
+    position: relative;
+    height: 40px;
+    width: 20%;
+    background: black;
+    margin: 0px auto;
+    border-radius: 5px;
+
+    animation-name: rainbow;/*id de la animación para el @keyframes*/
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow{
+    0%{/*inicio*/
+        background-color: blue;
+        left: 0px;
+    }
+    50%{/*mitad*/
+        background-color: green;
+        left:50px;
+    }
+    100%{/*final*/
+        background-color: yellow;
+        left:100px;
+    }
+}
+
+.button{
+    margin:  150px 0px 0px 300px;
+
+}
+
+button{
+    border-radius: 5px;
+    color: white;
+    background-color:#0F5897;
+    padding: 5px 10px 8px 10px;
+}
+
+button:hover{
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;/*Q pasa despúes de que la animación termina*/
+}
+
+@keyframes background-color{
+    100%{
+        background-color:#4791d0;
+    }
+}

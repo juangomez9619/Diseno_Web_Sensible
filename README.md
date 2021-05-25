@@ -68,3 +68,12 @@
 + Centrado horizontal con `margin: auto`.
 + Teoria del color: primarios y secundarios.
 + Gradiente de color lineal y repetitivo.
++ Imágenes de fondo con patrones sutiles.
++ Transformaciones de escala con `transform: scale(x);`.
++ Transformación a lo largo del eje x y y `transform: skewX(xdeg);`.
++ Gráficos CSS.
++ Propiedades `@keyframes` y animación.
++ Cambiar el estado de un botón con animaciones.
++ Crear movimiento con CSS.
++ Controlar la velocidad de desplazamiento de la animación.
++ Curvas de Bezier.
