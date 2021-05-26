@@ -77,3 +77,12 @@
 + Crear movimiento con CSS.
 + Controlar la velocidad de desplazamiento de la animación.
 + Curvas de Bezier.
+
+## Accesibilidad aplicada
+
++ Texto alternativo para imagenes con `alt=""` y cuando dejarlo en blanco.
++ Sentido semántico y lógico de los encabezados H1, H2, H3,...
++ Encabezado `<header>`, contenido principal `<main>` y pie de página `<footer>`.
++ `<div>` para grupos de contenido, `<section>` para grupos de contenido relacionado y
+`<article>` para grupos independientes de contenido autónomo.
+
