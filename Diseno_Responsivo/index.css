@@ -1,0 +1,14 @@
+p{
+    font-size: 20px;
+}
+
+@media (max-height: 800px){/*Query para diseño responsive*/
+    p{
+        font-size: 10px;
+    }
+}
+
+.responsive-img{
+    max-width: 100%;
+    height: auto;
+}
