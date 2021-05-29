@@ -87,7 +87,25 @@
 `<article>` para grupos independientes de contenido autónomo.
 
 ## Diseño Web Responsivo
++ Media Query considerando el tamaño del viewport.
++ Imágenes responsivas.
++ Imágenes retinas para pantallas de añta resolución.
++ Tipografía responsiva utilizando unidades relativas al viewport.
 
-
+## CSS Flexbox -> Flexible
++ Posición de elementos con `display: flex`.
++ `Flex-direction`row y column.
++ Alineación del eje principal con `justify-content`:
+    + flex-start.
+    + flex-end.
+    + space-beetween.
+    + space-around.
+    + space-evenly.
++ Alineación del eje secundario con `align-items`:
+    + flex-start.
+    + flex-end.
+    + center.
+    + strech.
+    + baseline.
 
 
