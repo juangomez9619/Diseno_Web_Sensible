@@ -87,12 +87,14 @@
 `<article>` para grupos independientes de contenido autónomo.
 
 ## Diseño Web Responsivo
+
 + Media Query considerando el tamaño del viewport.
 + Imágenes responsivas.
 + Imágenes retinas para pantallas de añta resolución.
 + Tipografía responsiva utilizando unidades relativas al viewport.
 
 ## CSS Flexbox -> Flexible
+
 + Posición de elementos con `display: flex`.
 + `Flex-direction`row y column.
 + Alineación del eje principal con `justify-content`:
@@ -108,4 +110,13 @@
     + strech.
     + baseline.
 
+## CSS Grid -> Grilla
+
++ Posición de elementos con `display: grid`.
++ Cantidad y tamaño de columnas con `grid-template-columns: 50px 50px;`.
++ Cantidad y tamaño de filas con `grid-template-rows: 50px 50px;`.
++ Uso de unidades absolutas y relativas para cambiar el tamaño de cada columnas y filas.
++ Crear espacio entre filas y columnas con `grid-gap: 10px 10px`.
++ `grid-column: 1 / 3;` para establecer cuantas columnas ocupa un elemento, fila inicio/fila fin.
++ `grid-row: 1 / 3;` para establecer cuantas filas ocupa un elemento, fila inicio/fila fin.
 

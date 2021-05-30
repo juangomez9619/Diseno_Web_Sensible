@@ -1,0 +1,23 @@
+.d1 {background-color: LightSkyBlue;}
+.d2 {background-color: LightSalmon;}
+.d3 {background-color: PaleTurquoise;}
+.d4 {background-color: LightPink;}
+.d5 {
+    background-color: PaleGreen;
+    grid-column: 2/4;/*Este elemento ocupa desde la 2 hasta la 4 linea en columna*/
+    grid-row: 2/4;/*Este elemento ocupa desde la 2 hasta la 4 linea en fila*/
+}
+
+.container {
+    font-size: 40px;
+    width: 100%;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr  100px 2fr;/* Número de columnas y el ancho de cada una*/
+    grid-template-rows: 1fr 1fr 1fr;/*Número de filas y el alto de cada una*/
+    grid-column-gap: 20px; /* Separación entre columnas*/
+    grid-row-gap: 5px;/*Espaciado entre filas*/
+
+    grid-gap: 10px 20px;/*Espaciado fila columna/
+
+}
