@@ -1,23 +1,90 @@
-.d1 {background-color: LightSkyBlue;}
-.d2 {background-color: LightSalmon;}
-.d3 {background-color: PaleTurquoise;}
+.d1 {
+    background-color: LightSkyBlue;
+    justify-self: start;}
+.d2 {
+    background-color: LightSalmon;
+    justify-self: center;/*Alineación HORIZONTAl del contenido de este elemento o celda de la grilla*/
+}
+.d3 {
+    background-color: PaleTurquoise;
+    justify-self: end;
+    align-self: end; /*Alineación VERTICAl del contenido de este elemento*/}
 .d4 {background-color: LightPink;}
 .d5 {
     background-color: PaleGreen;
-    grid-column: 2/4;/*Este elemento ocupa desde la 2 hasta la 4 linea en columna*/
-    grid-row: 2/4;/*Este elemento ocupa desde la 2 hasta la 4 linea en fila*/
+    /*grid-column: 2/4;Este elemento ocupa desde la 2 hasta la 4 linea en columna*/
+    /*grid-row: 2/4;Este elemento ocupa desde la 2 hasta la 4 linea en fila*/
+    grid-area: footer;
 }
 
 .container {
     font-size: 40px;
     width: 100%;
+    min-height: 300px;
     background-color: lightgray;
     display: grid;
-    grid-template-columns: 1fr  100px 2fr;/* Número de columnas y el ancho de cada una*/
-    grid-template-rows: 1fr 1fr 1fr;/*Número de filas y el alto de cada una*/
-    grid-column-gap: 20px; /* Separación entre columnas*/
+    grid-template-columns: repeat(3, 1fr);/* Número de columnas y el ancho de cada una*/
+    grid-template-rows: repeat(3, 1fr);/*Número de filas y el alto de cada una*/
+    grid-column-gap: 10px; /* Separación entre columnas*/
     grid-row-gap: 5px;/*Espaciado entre filas*/
 
-    grid-gap: 10px 20px;/*Espaciado fila columna/
+    grid-gap: 10px ;/*Espaciado fila columna*/
 
+    justify-items: stretch;/*Alineación horizontal de TODOS los elementos de la grilla*/
+    align-items: stretch;
+
+    /*Áreas definidas dentro de una grilla*/
+    grid-template-areas: 
+    "header header header"
+    "advert content content"
+    "footer footer footer";
+
+}
+
+.container_2 {
+    background-color: lightgray;
+    margin-top: 15px;
+
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";    
+}
+
+.item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+}
+
+.item2 {
+    background: LightSalmon;
+    grid-area: advert;
+}
+
+.item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    /* Cambia solo el código debajo de esta línea */
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+.item4 {
+    background: lightpink;
+    grid-area: footer;
+}
+
+.itemOne {
+    background: PaleGreen;
+}
+
+.itemTwo {
+    background: BlanchedAlmond;
 }

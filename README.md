@@ -119,4 +119,16 @@
 + Crear espacio entre filas y columnas con `grid-gap: 10px 10px`.
 + `grid-column: 1 / 3;` para establecer cuantas columnas ocupa un elemento, fila inicio/fila fin.
 + `grid-row: 1 / 3;` para establecer cuantas filas ocupa un elemento, fila inicio/fila fin.
++ Alineación horizontal de los elementos de una celda con `justify-self`.
++ Alineación vertical de los elementos de una celda con `align-self`.
++ Alineación horizontal de los elementos de TODAS las celdas con `justify-items`.
++ Alineación vertical de los elementos de TODAS las celdas con `align-items`.
++ División de la grilla en áreas con `grid-template-areas`.
++ Asignación de áreas a ocupar por un elemento con `grid-area`.
++ Asignación de áreas a ocupar por un elemento con `grid-area: 1/1/2/4;`.
++ Función `repeat`para expresiones repetitivas.
++ Función `minmax`para limitar el tamaño de los elementos.
++ `auto-fill`y `auto-fit`  para crear diseños flexibles.
++ Usar consultas para modificar la distribución de los elementos de la grilla.
++ Grillas anidadas.
 
